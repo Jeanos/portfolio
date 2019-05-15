@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+<form action="http://google.com">
+<p>
+	<label for="firstName">First name :</label>
+	<input id="firstName" type="text" name="First name" placeholder="Joshua">
+
+	<label for="lastName">Last name :</label>
+	<input id="lastName" type="text" name="Last name" placeholder="smith">
+</p>
+<p>
+	<label for="Male">Male</label>
+	<input type="radio" name="gender" value="Male">
+	<label for="Female">Female</label>
+	<input type="radio" name="gender" value="Female">
+	<label for="other">Other</label>
+	<input type="radio" name="gender" value="Other">
+</p>
+
+<p>
+	<label for="Email">Email</label>
+	<input type="email" name="Email" placeholder="your Email" required>
+	<label for="Password">Password</label>
+	<input type="Password" required minlength="5" maxlength="10">
+</p>
+
+<p>
+	<label for="birthday">Birthday</label>
+	<select name="month">
+		<option>Month</option>
+		<option>January</option>
+		<option>January</option>
+	</select>
+	<select name="Day">
+		<option>Day</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<select name="Year">
+		<option>Year</option>
+		<option>2016</option>
+		<option>2015</option>
+	</select>
+</p>
+<p>
+	<label>I agree to the terms and conditions</label>
+	<input type="checkbox" name="agree" required>
+</p>
+<button>Submit</button>
+</form>
+</body>
+</html>

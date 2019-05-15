@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Basics</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="addcss.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" />
+    
+
+</head>
+<body class="">
+<div>
+
+	<nav class="navbar navbar-inverse colorwhite">
+
+	<!-- Menu -->
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="colorwhite" >Menu</span>
+      
+      </button>
+	    <img id="userphoto" src="images/jj.jpg" alt="..." class="img-circle xs">
+							<label for="userphoto" class="userphotolabel">Corinti Johnson</label>
+
+	    </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="/"> <span class="sr-only"></span><i class="fa fa-home" aria-hidden="true"> </i>Home</a></li>
+	        <li><a><i class="fa fa-users" aria-hidden="true"></i>References</a><span class="sr-only"></span>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-suitcase" aria-hidden="true"></i>
+	          My projects 
+	          <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	              <li><a href="javascript.html">Counting Score Game</a></li>
+	            <li><a href="guesscolor.html">Guess Color</a></li>
+	            <li><a href="mathGame.html">Math Game</a>
+	            </li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="jQuery.html">jQuery Projects</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	       	<form class="navbar-form navbar-left" role="search">
+	       		<input type="text" class="form-control" name="search" placeholder="Keyword">
+	       		
+	       	</form>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+								<!-- ----------------------------  Menu Elements ------------------------------------ -->
+<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-2 col-xs-2  getstart" id="bs-example-navbar-collapse-1">
+		 	 <ul class="list-group">
+		   	 <li class="list-group-item">Client Projects <span class="badge">3</span></li>
+		   	 <li class="list-group-item">School Projects <span class="badge">5</span></li>
+		   	 <li class="list-group-item">Personal Projects <span class="badge">3</span></li>
+		  	</ul>
+			  <div class="panel-group">
+			    <div class="panel panel-default">
+			      <div class="panel-heading fill-div">
+			        <p class="panel-title">
+			          <a data-toggle="collapse" href="#collapse1" class="fill-div">My Emails <span class="glyphicon glyphicon-envelope left"></span></a>
+			        </p>
+			      </div>
+			      <div id="collapse1" class="panel-collapse collapse">
+			        <div class="panel-body">corintijohnson@gmail.com</div>
+			        <div class="panel-footer">infos@3jsoft.ca</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+								<!-- ----------------------------  Admin Body ------------------------------------ -->
+
+	<div class="col-md-10 col-xs-10 getstartcase contentbody">
+		
+		<!-- Section: Team v.2 -->
+<section class="team-section text-center my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold my-5">My References</h2>
+  <!-- Section description -->
+  <p class="grey-text w-responsive mx-auto mb-5"></p>
+
+  <!-- Grid row -->
+  <div class="row text-center">
+
+    <!-- Grid column -->
+    <div class="col-md-4 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+      </div>
+      <h4 class="font-weight-bold dark-grey-text my-4">Maria Kate</h4>
+      <h6 class="text-uppercase grey-text mb-3"><strong>Photographer</strong></h6>
+      <!-- Facebook-->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <!--Dribbble -->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
+        <i class="fa fa-dribbble"></i>
+      </a>
+      <!-- Twitter -->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+      </div>
+      <h4 class="font-weight-bold dark-grey-text my-4">John Doe</h4>
+      <h6 class="text-uppercase grey-text mb-3"><strong>Front-end Developer</strong></h6>
+      <!--Email-->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <!-- Facebook-->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <!-- GitHub-->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+      </div>
+      <h4 class="font-weight-bold dark-grey-text my-4">Sarah Melyah</h4>
+      <h6 class="text-uppercase grey-text mb-3"><strong>Web Developer</strong></h6>
+      <!--Linkedin -->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-li">
+        <i class="fa fa-linkedin-in "></i>
+      </a>
+      <!-- Twitter -->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw">
+        <i class="fa fa-twitter "></i>
+      </a>
+      <!--Pinterest -->
+      <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-pin">
+        <i class="fa fa-pinterest "></i>
+      </a>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Team v.2 -->
+		
+	</div>		
+	</div> 					
+	
+</body>
+</html>

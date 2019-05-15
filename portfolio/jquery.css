@@ -1,0 +1,140 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+textarea {
+    width: 300px;
+    height: 100px
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.displayBoxImage{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+}
+fieldset {
+    border: 1px solid #ddd;
+}
+#app{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    background: #eee;
+    justify-content: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+#products{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    padding: 50px;
+    background: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+#forms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+input{
+    width: 300px;
+    height: 30px;
+}
+.productImage{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+button{
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    background: #056894;
+    font-size: 12pt;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #004f73;
+}
+
+button:hover{
+    background: #0a8cc5;
+    cursor: pointer;
+}
+
+.btnGreen{
+    background-color: darkgreen;
+}
+.btnGreen:hover{
+    background-color: seagreen;
+}
+
+.btnRed{
+    background-color: #b13232;
+}
+.btnRed:hover{
+    background-color: darkred;
+}
+.productDesc{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eee
+}
+
+footer {
+   position: fixed;
+   left: 0;
+    height: 50px;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    padding-top: 20px;
+    color: white;
+    padding-left: 20px;
+}
+header {
+    position: fixed;
+    left: 0;
+    height: 50px;
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    padding-top: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  text-align:center;
+  border-top: 16px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

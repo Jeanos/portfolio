@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Basics</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="addcss.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" />
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body class="">
+<div>
+
+	<nav class="navbar navbar-inverse colorwhite">
+
+	<!-- Menu -->
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="colorwhite" >Menu</span>
+      
+      </button>
+	    <img id="userphoto" src="images/jj.jpg" alt="..." class="img-circle xs">
+							<label for="userphoto" class="userphotolabel">Corinti Johnson</label>
+
+	    </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="/"> <span class="sr-only"></span><i class="fa fa-home" aria-hidden="true"> </i> Home</a></li>
+	        <li onclick="goReference()"><a id="reference"><i class="fa fa-users" aria-hidden="true"></i> References </a><span class="sr-only"></span>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-suitcase" aria-hidden="true"></i>
+	          My projects 
+	          <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	              <li><a href="javascript.html">Counting Score Game</a></li>
+	            <li><a href="guesscolor.html">Guess Color</a></li>
+	            <li><a href="#">Something else here</a>
+	            </li>
+	            <li role="separator" class="divider"></li>
+	             <li><a href="jQuery.html">jQuery Projects</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	       	<form class="navbar-form navbar-left" role="search">
+	       		<input type="text" class="form-control" name="search" placeholder="Keyword">
+	       		
+	       	</form>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+								<!-- ----------------------------  Menu Elements ------------------------------------ -->
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-2 col-xs-2  getstart" id="bs-example-navbar-collapse-1">
+		 	 <ul class="list-group">
+		   	 <li class="list-group-item">Client Projects <span class="badge">3</span></li>
+		   	 <li class="list-group-item">School Projects <span class="badge">5</span></li>
+		   	 <li class="list-group-item">Personal Projects <span class="badge">3</span></li>
+		  	</ul>
+			  <div class="panel-group">
+			    <div class="panel panel-default">
+			      <div class="panel-heading fill-div">
+			        <p class="panel-title">
+			          <a data-toggle="collapse" href="#collapse1" class="fill-div">My Emails <span class="glyphicon glyphicon-envelope left"></span></a>
+			        </p>
+			      </div>
+			      <div id="collapse1" class="panel-collapse collapse">
+			        <div class="panel-body">corintijohnson@gmail.com</div>
+			        <div class="panel-footer">infos@3jsoft.ca</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+								<!-- ----------------------------  Admin Body ------------------------------------ -->
+
+	<div class="col-md-10 col-xs-10 getstartcase contentbody">
+		<h1 class="textshadow"><i class="fa fa-cog" aria-hidden="true"></i> Points counter </h1>
+		<div class="col-md-12 col-xs-12 border maxheight" id="answertab">
+			 <label>Winning Score set : <input type="number" name="" id="inputScoreHight"></label>
+			<h3>The winning score of this game is <span id="winningScoreDisplay">0</span></h3>
+			<p id="demo"></p>
+  		</div>
+&nbsp;
+  		
+		<div class="col-xs-12 border maxheight" id="answertab">
+            <div class="row">
+                <div class="col-xs-6 border maxheight mini-box"><div><span id="score1">0</span></div></div>
+                <div class="col-xs-6 border maxheight mini-box2"><div class="mini-box"><span id="score2">0</span></div></div>
+            </div>
+        <p>
+        	<!-- <button onclick="validate()">Validate</button>	
+        	<button onclick="normal()">Normal</button>	 -->
+		<p>
+			&nbsp;
+		</p>
+        <button onclick="upScore1()">Player1</button>
+        <button onclick="upScore2()">Player 2</button>
+         <button onclick="reset()">Reset</button>
+        
+        </p>
+		
+  		</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
